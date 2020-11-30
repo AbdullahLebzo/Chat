@@ -1,0 +1,142 @@
+
+
+.container {
+	display: flex;	
+}
+
+/*sidebar*/
+
+.side-menu {
+	height: 100%;
+	max-width: 75px;
+	min-width: 75px;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0px rgba(123, 123, 123, 0.2);
+}
+
+ul {
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-bottom: auto;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+li {
+	margin-bottom: 0;	
+	width: 30%;
+	margin-top: 43px;
+}
+
+.top-nav-item {
+	margin-top: 6px;
+}
+
+
+li img {
+	width: 30px;
+	border: 1px solid yellow;
+	border: hidden;
+	border-radius: 100%;
+}
+
+.active:focus {
+	background-color: rgba(123, 123, 123, 0.2);
+	padding: 10px;
+	padding-top: 20px;
+	padding-left:15px;
+	padding-right:15px;
+	margin-left: -15px;
+	border: 1px solid yellow;
+	border: hidden;
+	border-radius: 20%;
+}
+
+.chats{
+	margin-left: 75px;
+	padding-left: 25px;
+	width: 30%;
+}
+
+.chats-header {
+	position:relative;
+	background-color: green;
+}
+
+.search-chats {
+	position: absolute;
+	top: 41px;
+	left: 0px;
+	border:1px solid gray;
+	border-right: hidden;
+	background-color: gray;
+	padding: 15px;
+	padding-bottom: 6px;
+}
+
+.search-field {
+	position: absolute;
+	left: 55px;
+	border:1px solid gray;
+	padding:16px;
+	border-left: hidden;
+	background-color: gray;
+}
+
+@media screen and (max-width: 990px) {
+	.hidden-mobile {
+		display: none;
+	}
+ 	
+
+	.side-menu {
+		position: fixed;
+		bottom: 0;
+		top: initial;
+		max-width: none;
+		width:100%;
+		height: 60px;
+		border-top: 1px solid rgba(0, 0, 0, 0.2);
+		box-shadow: 0 -5px 5px -5px rgba(123, 123, 123, 0.8);
+		}
+
+	.menu-list {
+		margin-bottom: 30px;
+		width: 100%;
+		display: flex;
+	}
+
+	li {
+	
+	margin: auto;
+	width: initial;
+	}
+
+	ul {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		position: absolute;
+		left: initial;
+		flex-direction: row;
+	}
+
+	.active:focus {
+	background-color: rgba(123, 123, 123, 0.2);
+	padding: 10px;
+	padding-top: 20px;
+	padding-left:15px;
+	padding-right:15px;
+	margin-right: -15px;
+	border: 1px solid yellow;
+	border: hidden;
+	border-radius: 20%;
+}
+}
+
