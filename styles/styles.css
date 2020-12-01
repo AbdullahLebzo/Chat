@@ -92,7 +92,7 @@ li img {
 		top: initial;
 		max-width: none;
 		width:100%;
-		height: 60px;
+		height: 65px;
 		border-top: 1px solid rgba(0, 0, 0, 0.2);
 		box-shadow: 0 -5px 5px -5px rgba(123, 123, 123, 0.8);
 		}
@@ -115,6 +115,11 @@ li img {
 		position: absolute;
 		left: initial;
 		flex-direction: row;
+	}
+
+	.active {
+		border: 15px solid rgba(123, 123, 123, 0.2);
+		margin-top: -10px;
 	}
 }
 
