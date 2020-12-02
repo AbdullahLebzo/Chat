@@ -10,40 +10,45 @@
 
 	<div class="root">
 		
+		<!-- Sidebar starts here -->
 
 		<div class="side-menu">
-				<ul class="menu-list">
-					<li class="top-nav-item hidden-mobile">
-						<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path d="M4.929 19.071A9.969 9.969 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10H2l2.929-2.929zM11 6v12h2V6h-2zM7 9v6h2V9H7zm8 0v6h2V9h-2z" fill="rgba(114,105,239,1)"/></svg></a>
-					</li>
-					<li>
-						<a href="#"><span class="material-icons">person</span></a>
-					</li>
-					<li class="active">
-						<a href="#"><span class="material-icons">sms</span></a>
-					</li>
-					<li >
-						<a href="#"><span class="material-icons">group</span></a>
-					</li>
-					<li >
-						<a href="#"><span class="material-icons">groups</span></a>
-					</li>
-					<li >
-						<a href="#"><span class="material-icons">settings</span></a>
-					</li>
-					<li class="hidden-mobile">
-						<a href="#"><span class="material-icons">language</span></a>
-					</li>
-					<li  class="hidden-mobile">
-						<a href="#"><span class="material-icons">nights_stay</span></a>
-					</li>
-					<li>
-						<a href="#"><img src="./images/persona4.png" alt="user-photo"></a>
-					</li>
-				</ul>
-			</div>
+			<ul class="menu-list">
+				<li class="top-nav-item hidden-mobile">
+					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path d="M4.929 19.071A9.969 9.969 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10H2l2.929-2.929zM11 6v12h2V6h-2zM7 9v6h2V9H7zm8 0v6h2V9h-2z" fill="rgba(114,105,239,1)"/></svg></a>
+				</li>
+				<li>
+					<a href="#"><span class="material-icons">person</span></a>
+				</li>
+				<li class="active">
+					<a href="#"><span class="material-icons">sms</span></a>
+				</li>
+				<li >
+					<a href="#"><span class="material-icons">group</span></a>
+				</li>
+				<li >
+					<a href="#"><span class="material-icons">groups</span></a>
+				</li>
+				<li >
+					<a href="#"><span class="material-icons">settings</span></a>
+				</li>
+				<li class="hidden-mobile">
+					<a href="#"><span class="material-icons">language</span></a>
+				</li>
+				<li  class="hidden-mobile">
+					<a href="#"><span class="material-icons">nights_stay</span></a>
+				</li>
+				<li>
+					<a href="#"><img src="./images/persona4.png" alt="user-photo"></a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Sidebar Ends Here -->
 
 		<div class="container">
+
+			<!-- Chats Start Here -->
 	
 			<div class="chats">
 				<div class="top-of-chats">
@@ -89,6 +94,8 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- Chats End Here -->
 
 				<!-- messages in recent tab start here -->
 
@@ -137,7 +144,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="msgs">
+						<li class="msgs" id="active-messaging">
 							<div class="msg-pics">
 								<a href="#"><img src="./images/persona1.png" alt="user-photo" class="user-photo"></a>
 							</div>
@@ -271,6 +278,196 @@
 
 			</div>
 
+				<!-- active chat starts here -->
+
+			<div class="active-chat">
+				<div class="active-chat-header">
+					<div>
+						<a href="#"><img src="./images/persona1.png" alt="user-photo" class="user-photo chat-imgs"></a>
+						<div>
+							<img src="./images/green" alt="connected" class="connection-status">
+						</div>
+					</div>
+					<div class="msgs-content">
+						<div>
+							<h4 class="active-chat-header-text">Doris Brown</h4>
+						</div>
+						<div class="active-chat-header-icons">
+							<a href="#"><span class="material-icons">search</span></a>
+							<a href="#"><span class="material-icons">person</span></a>
+							<a href="#"><span class="material-icons">more_horiz</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="chat-scroll">
+					<ul>
+						<li class="active-chat-list">
+							<div>
+								<img src="./images/persona1.png" alt="doris photo" class="user-photo chat-imgs chat-msg-img">
+							</div>
+							<div class="current-msgs">
+								<div class="active-chat-msg">
+									<span class="msg-content">Good Morning</span>
+									<span class="active-msg-time"><span class="material-icons time-icon">schedule</span> 10:00</span>
+								</div>
+								<div>
+									<span class="chat-msg-name">Doris Brown</span>
+								</div>
+							</div>
+							<div>
+								<a href="#"><span class="material-icons vert-dots">more_vert</span></a>
+							</div>
+						</li>
+						
+						<li class="user-msgs">
+							<div>
+								<a href="#"><span class="material-icons user-ver-dots">more_vert</span></a>
+							</div>
+							<div>
+								<div class="user-msgs-content">
+									<span class="user-msgs-text">Good morning, How are you? What about our next meeting?</span>
+									<span class="user-msg-time"><span class="material-icons user-time-icon">schedule</span> 10:02</span>
+								</div>
+								<div>
+									<span  class="user-msgs-name">Patricia Smith</span>
+								</div>
+							</div>
+							<div>
+								<a href="#"><img src="./images/persona4.png" alt="user-photo" class="user-msg-img"></a>
+							</div>
+							
+						</li>
+
+						<li>
+							<span id="day">Today</span>
+							<hr>
+						</li>
+
+						<li class="active-chat-list">
+							<div class="hide">
+								<img src="./images/persona1.png" alt="doris photo" class="user-photo chat-imgs chat-msg-img">
+							</div>
+							<div class="current-msgs">
+								<div class="active-chat-msg hidden-name-msg">
+									<span class="msg-content">Yeah everything is fine</span>
+									<span class="active-msg-time"><span class="material-icons time-icon">schedule</span> 10:05</span>
+								</div>
+								<div class="hide">
+									<span class="chat-msg-name">Doris Brown</span>
+								</div>
+							</div>
+							<div>
+								<a href="#"><span class="material-icons vert-dots">more_vert</span></a>
+							</div>
+						</li>
+
+						<li class="active-chat-list">
+							<div>
+								<img src="./images/persona1.png" alt="doris photo" class="user-photo chat-imgs chat-msg-img">
+							</div>
+							<div class="current-msgs">
+								<div class="active-chat-msg">
+									<span class="msg-content">& Next meeting tomorrow 10.00AM</span>
+									<span class="active-msg-time"><span class="material-icons time-icon">schedule</span> 10:05</span>
+								</div>
+								<div>
+									<span class="chat-msg-name">Doris Brown</span>
+								</div>
+							</div>
+							<div>
+								<a href="#"><span class="material-icons vert-dots">more_vert</span></a>
+							</div>
+						</li>
+
+						<li class="user-msgs">
+							<div>
+								<a href="#"><span class="material-icons user-ver-dots">more_vert</span></a>
+							</div>
+							<div>
+								<div class="user-msgs-content">
+									<span class="user-msgs-text">Wow that's great</span>
+									<span class="user-msg-time"><span class="material-icons user-time-icon">schedule</span> 10:06</span>
+								</div>
+								<div>
+									<span  class="user-msgs-name short-msg">Patricia Smith</span>
+								</div>
+							</div>
+							<div>
+								<a href="#"><img src="./images/persona4.png" alt="user-photo" class="user-msg-img"></a>
+							</div>
+							
+						</li>
+
+						<li class="active-chat-list">
+							<div>
+								<img src="./images/persona1.png" alt="doris photo" class="user-photo chat-imgs chat-msg-img">
+							</div>
+							<div class="current-msgs">
+								<div class="active-chat-msg">
+									<span class="msg-content">Good Morning</span>
+									<span class="active-msg-time"><span class="material-icons time-icon">schedule</span> 10:00</span>
+								</div>
+								<div>
+									<span class="chat-msg-name">Doris Brown</span>
+								</div>
+							</div>
+							<div>
+								<a href="#"><span class="material-icons vert-dots">more_vert</span></a>
+							</div>
+						</li>
+
+						<li class="user-msgs">
+							<div>
+								<a href="#"><span class="material-icons user-ver-dots">more_vert</span></a>
+							</div>
+							<div>
+								<div class="user-msgs-content">
+									<span class="user-msgs-text">Good morning, How are you? What about our next meeting?</span>
+									<span class="user-msg-time"><span class="material-icons user-time-icon">schedule</span> 10:02</span>
+								</div>
+								<div>
+									<span  class="user-msgs-name">Patricia Smith</span>
+								</div>
+							</div>
+							<div>
+								<a href="#"><img src="./images/persona4.png" alt="user-photo" class="user-msg-img"></a>
+							</div>
+							
+						</li>
+
+						<li class="active-chat-list">
+							<div>
+								<img src="./images/persona1.png" alt="doris photo" class="user-photo chat-imgs chat-msg-img">
+							</div>
+							<div class="current-msgs">
+								<div class="active-chat-msg">
+									<span class="msg-content">typing...</span>
+									<span class="active-msg-time"><span class="material-icons time-icon">schedule</span> 10:00</span>
+								</div>
+								<div>
+									<span class="chat-msg-name">Doris Brown</span>
+								</div>
+							</div>
+					
+						</li>
+					</ul>
+				</div>
+
+				<!-- Active Chat Footer -->
+
+				<div class=" footer-container">
+					<div  class="footer">
+						<input type="text" name="search" placeholder="Enter Message..." class="footer-search">
+						<div class="footer-icons">
+							<a href="#"><span class="material-icons">sentiment_satisfied_alt</span></a>
+							<a href="#"><span class="material-icons">attach_file</span></a>
+							<a href="#"><span class="material-icons">crop_original</span></a>
+							<a href="#" class="send"><span class="material-icons" id="send-icon">send</span></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
 
 
 		</div>
